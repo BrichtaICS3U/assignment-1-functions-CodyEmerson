@@ -9,8 +9,19 @@ def CtoF (x):
     return x
 
 ###### uncomment this when you are ready to work on it
-#def FtoC ():
-#
+def FtoC (y):
+    y  = (0.55556)*(y-32)
+    return y
 
-temperature = int(input('Enter your temperature in Celsius: ' ))
-print(CtoF(temperature))
+print('Convert to Celsius or to Fahrenheit?')
+ans = str(input())
+if ans == str('Fahrenheit') or ans == str('F'):
+    temperature = int(input('Enter your temperature in Celsius: ' ))
+    temperature = CtoF(temperature)
+    print(round(temperature))
+
+elif ans == str('Celsius') or ans == str('C'):
+    temperature = int(input('Enter your temperature in Fahrenheit: ' ))
+    temperature = FtoC(temperature)
+    print(round(temperature))
+    
