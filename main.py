@@ -17,11 +17,19 @@ print('Convert to Celsius or to Fahrenheit?')
 ans = str(input())
 if ans == str('Fahrenheit') or ans == str('F'):
     temperature = int(input('Enter your temperature in Celsius: ' ))
-    temperature = CtoF(temperature)
-    print(round(temperature))
+    if temperature <= -273:
+        print('Restart the shell and print a temperature higher than -273C')
+    else:
+        temperature = CtoF(temperature)
+        print(round(temperature))
+        print('Restart the shell to continue')
 
 elif ans == str('Celsius') or ans == str('C'):
     temperature = int(input('Enter your temperature in Fahrenheit: ' ))
-    temperature = FtoC(temperature)
-    print(round(temperature))
+    if temperature <= -459 :
+        print('Restart the shell and print a temperature higher than -459F')
+    else:
+        temperature = FtoC(temperature)
+        print(round(temperature))
+        print('Restart the shell to continue')
     
