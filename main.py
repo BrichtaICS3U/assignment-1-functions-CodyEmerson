@@ -33,4 +33,11 @@ while answ == True:
         else:
             temperature = FtoC(temperature)
             print(round(temperature))
+    print('Would you like to do another conversion? Y/N')
+    answe = str(input())
+    if answe == str('Y'):
+        print('Ok')
+    elif answe == str('N'):
+        print('Ok')
+        answ = False
     
