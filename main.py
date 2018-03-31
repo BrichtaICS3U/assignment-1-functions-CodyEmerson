@@ -24,7 +24,7 @@ while answ == True:
             print('Print a temperature higher than -273C')
         else:
             temperature = CtoF(temperature)
-            print(round(temperature))
+            print(str(round(temperature)) + str(' Fahrenheit'))
 
     elif ans == str('Celsius') or ans == str('C'):
         temperature = int(input('Enter your temperature in Fahrenheit: ' ))
@@ -32,7 +32,7 @@ while answ == True:
             print('Print a temperature higher than -459F')
         else:
             temperature = FtoC(temperature)
-            print(round(temperature))
+            print(str(round(temperature)) + str(' Celsius'))
     print('Would you like to do another conversion? Y/N')
     answe = str(input())
     if answe == str('Y'):
